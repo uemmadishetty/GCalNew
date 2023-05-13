@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create Google Calendar Event</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Create Google Calendar Event</h1>
+        <div class="form-group">
+            <label for="summary">Webinar Title:</label>
+            <input type="text" id="summary">
+        </div>
+
+        <div class="form-group">
+            <div class="input-field">
+                <label for="start-date">Start Date:</label>
+                <input type="date" id="start-date">
+            </div>
+            <div class="input-field">
+                <label for="start-time">Start Time:</label>
+                <input type="time" id="start-time">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="input-field">
+                <label for="end-date">End Date:</label>
+                <input type="date" id="end-date">
+            </div>
+            <div class="input-field">
+                <label for="end-time">End Time:</label>
+                <input type="time" id="end-time">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="description">Description:</label>
+            <textarea id="description"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="location">Location:</label>
+            <input type="text" id="location">
+        </div>
+
+        <div class="button-group">
+            <button onclick="generateGoogleCalendarLink()">Generate Link</button>
+        </div>
+
+        <div id="generated-link"></div>
+
+        <script src="index.js"></script>
+    </div>
+</body>
+</html>
+
