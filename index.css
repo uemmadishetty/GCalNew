@@ -87,13 +87,15 @@ body {
 @media screen and (max-width: 480px) {
     .input-field label {
         flex-basis: 30%;
-        margin-right: 0;
+        margin-right: 5%;
     }
 
     .input-field input[type="text"],
     .input-field input[type="date"],
     .input-field input[type="time"],
     .input-field textarea {
+        flex-basis: 65%;
+        margin-right: 0;
         font-size: 14px;
     }
 
