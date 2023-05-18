@@ -23,20 +23,21 @@ body {
     display: block;
 }
 
-.form-group .input-field {
+.input-field {
     display: flex;
     align-items: center;
+    margin-bottom: 10px;
 }
 
-.form-group .input-field label {
+.input-field label {
     flex-basis: 25%;
     margin-right: 5%;
 }
 
-.form-group .input-field input[type="text"],
-.form-group .input-field input[type="date"],
-.form-group .input-field input[type="time"],
-.form-group .input-field textarea {
+.input-field input[type="text"],
+.input-field input[type="date"],
+.input-field input[type="time"],
+.input-field textarea {
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
@@ -45,7 +46,7 @@ body {
     font-size: 16px;
 }
 
-.form-group .input-field textarea {
+.input-field textarea {
     height: 150px;
 }
 
@@ -81,4 +82,22 @@ body {
     box-sizing: border-box;
     resize: none;
     height: 100px;
+}
+
+@media screen and (max-width: 480px) {
+    .input-field label {
+        flex-basis: 30%;
+        margin-right: 0;
+    }
+
+    .input-field input[type="text"],
+    .input-field input[type="date"],
+    .input-field input[type="time"],
+    .input-field textarea {
+        font-size: 14px;
+    }
+
+    #generated-link textarea {
+        font-size: 14px;
+    }
 }
