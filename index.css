@@ -6,7 +6,7 @@ body {
 }
 
 .container {
-    max-width: 400px;
+    max-width: 600px;
     margin: 0 auto;
 }
 
@@ -31,24 +31,30 @@ body {
     display: inline-block;
     width: 25%;
     margin-right: 5%;
-    vertical-align: middle;
+    vertical-align: top;
 }
 
 .input-field input[type="text"],
 .input-field input[type="date"],
-.input-field input[type="time"],
-.input-field textarea {
+.input-field input[type="time"] {
     width: 70%;
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
     font-size: 16px;
-    vertical-align: middle;
+    vertical-align: top;
 }
 
 .input-field textarea {
+    width: 70%;
     height: 150px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+    vertical-align: top;
 }
 
 .button-group {
