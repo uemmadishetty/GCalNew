@@ -26,28 +26,18 @@ body {
 .input-field {
     margin-bottom: 10px;
     display: flex;
-    align-items: center;
+    justify-content: flex-end; /* Align fields to the right */
 }
 
 .input-field label {
     flex-basis: 25%;
     margin-right: 5%;
-    vertical-align: middle;
-    width: 100px; /* Modify the width value as desired */
+    text-align: right; /* Align labels to the left */
 }
 
 .input-field input[type="text"],
 .input-field input[type="date"],
-.input-field input[type="time"] {
-    flex-basis: 70%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    font-size: 16px;
-    width: 100%; /* Add this line to make the fields fill the available width */
-}
-
+.input-field input[type="time"],
 .input-field textarea {
     flex-basis: 70%;
     padding: 12px;
@@ -55,8 +45,10 @@ body {
     border-radius: 4px;
     box-sizing: border-box;
     font-size: 16px;
-    width: 100%; /* Add this line to make the field fill the available width */
-    height: 200px; /* Modify the height value as desired */
+}
+
+.input-field textarea {
+    height: 150px;
 }
 
 .button-group {
