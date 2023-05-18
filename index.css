@@ -24,26 +24,27 @@ body {
 }
 
 .input-field {
-    display: flex;
-    align-items: center;
     margin-bottom: 10px;
 }
 
 .input-field label {
-    flex-basis: 25%;
+    display: inline-block;
+    width: 25%;
     margin-right: 5%;
+    vertical-align: middle;
 }
 
 .input-field input[type="text"],
 .input-field input[type="date"],
 .input-field input[type="time"],
 .input-field textarea {
-    width: 100%;
+    width: 70%;
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
     font-size: 16px;
+    vertical-align: middle;
 }
 
 .input-field textarea {
@@ -86,20 +87,15 @@ body {
 
 @media screen and (max-width: 480px) {
     .input-field label {
-        flex-basis: 30%;
-        margin-right: 5%;
+        display: block;
+        width: 100%;
+        margin-right: 0;
     }
 
     .input-field input[type="text"],
     .input-field input[type="date"],
     .input-field input[type="time"],
     .input-field textarea {
-        flex-basis: 65%;
-        margin-right: 0;
-        font-size: 14px;
-    }
-
-    #generated-link textarea {
-        font-size: 14px;
+        width: 100%;
     }
 }
